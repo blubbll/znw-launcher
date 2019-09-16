@@ -1,0 +1,104 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body oncontextmenu="return false;">
+<div id="loader">
+</div>
+  <canvas id="bg"></canvas>
+<div id="desktop">
+  <ul>
+    <li class="desktop-icon">
+      <div class="folder"></div>
+      <div class="folder-tab"></div>
+      <span class="folder-name">CodePen</span>
+    </li>
+    <li class="desktop-icon">
+      <div class="folder"></div>
+      <div class="folder-tab"></div>
+      <span class="folder-name">CodePen</span>
+    </li>
+    <li class="desktop-icon">
+      <div class="folder"></div>
+      <div class="folder-tab"></div>
+      <span class="folder-name">CodePen</span>
+    </li>
+    <li class="desktop-icon">
+      <div class="folder"></div>
+      <div class="folder-tab"></div>
+      <span class="folder-name">CodePen</span>
+    </li>
+    <li class="desktop-icon">
+      <div class="folder"></div>
+      <div class="folder-tab"></div>
+      <span class="folder-name">CodePen</span>
+    </li>
+    <li class="desktop-icon">
+      <div class="folder"></div>
+      <div class="folder-tab"></div>
+      <span class="folder-name">CodePen</span>
+    </li>
+  </ul>
+
+</div>
+
+<div id="taskbar">
+  <div id="home-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg>
+  </div>
+  <div class="taskbar-tools">
+    <div id="time">88:88 PM</div>
+  </div>
+
+  <div id="start-menu">
+    <div id="settings">
+      <ul>
+        <li class="settings-item"><i class="fa fa-cog"></i></li>
+        <li class="settings-item"><i class="fa fa-power-off"></i></li>
+      </ul>
+    </div>
+
+    <ul>
+      <li class="start-menu-item"><i class="fa fa-chrome"></i> Browser</li>
+    </ul>
+  </div>
+    </div>
+
+<div id="window-wrapper">
+  <div class="window-options">
+    <button id="home-btn"><i class="fa fa-home"></i></button>
+    <input id="address-bar" type="search" placeholder="duckduckgo.com" onchange="setFrameSource()">
+    <button id="go-btn"><i class="fa fa-arrow-right"></i></button>
+    <span id="window-exit"><i class="fa fa-times"></i></span>
+
+  </div>
+
+</div>
+        
+  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.0.0/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/4.1.5/cash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+    <script src="./bg.js"></script>
+    <script src="./client.js" defer></script>
+</html>
